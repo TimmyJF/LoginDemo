@@ -71,6 +71,14 @@ if (!empty($_POST['old_password'])) {
 						<td>Email:</td>
 						<td><?=$email?></td>
 					</tr>
+					<tr>
+						<td>Address:</td>
+						<td><?=$address?></td>
+					</tr>
+					<tr>
+						<td>Phone Number:</td>
+						<td><?=$phonenumber?></td>
+					</tr>
 				</table>
 				<form action = "profile.php" method = "post">
 					<table>
@@ -86,6 +94,18 @@ if (!empty($_POST['old_password'])) {
 						<tr>
 							<td>new password: </td>
 							<td> <input type = "text" name = "new_password" placeholder = "new password" id = "password"> </td> 
+						</tr>
+						<tr>
+							<td>new email: </td>
+							<td> <input type = "text" name = "new_email" placeholder = "new email" id = "email"> </td> 
+						</tr>
+						<tr>
+							<td>new address: </td>
+							<td> <input type = "text" name = "new_address" placeholder = "new address" id = "address"> </td> 
+						</tr>
+						<tr>
+							<td>new phone number: </td>
+							<td> <input type = "text" name = "new_phonenumber" placeholder = "new phonenumber" id = "phonenumber"> </td> 
 						</tr>
 					</table>
 				</form>	
